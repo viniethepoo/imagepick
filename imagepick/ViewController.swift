@@ -8,18 +8,48 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate,
+UINavigationControllerDelegate {
 
+    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var toptext: UITextField!
+    @IBOutlet weak var bottomtext: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        resettext()
         // Do any additional setup after loading the view, typically from a nib.
+    
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    @IBAction func ImagePick(_ sender: AnyObject) {
+        let pickercontroller = UIImagePickerController()
+        pickercontroller.delegate = self
+        self.present(pickercontroller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func Imagesave(_ sender: AnyObject) {
+      save()
+    }
+    func save() {
+        //Create the meme
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func  resettext(){
+        toptext.text = "TOP"
+        toptext.textColor = UIColor.black
+        bottomtext.textColor = UIColor.black
+        bottomtext.text = "BOTTOM"
+    
     }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        ImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.dismiss(animated: false, completion: nil)
+    }
 
 }
 
