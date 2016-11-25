@@ -55,9 +55,20 @@
                                 <rect key="frame" x="194" y="623" width="181" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="save" id="HAh-hQ-UZ9">
+                                    <barButtonItem title="           save" id="HAh-hQ-UZ9">
                                         <connections>
                                             <action selector="Imagesave:" destination="BYZ-38-t0r" id="xkB-uZ-4HA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRh-Ey-YCk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Share" id="Dv4-Xd-RAy">
+                                        <connections>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="uyl-2i-SE5"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -83,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="-10" y="60"/>
         </scene>
     </scenes>
 </document>

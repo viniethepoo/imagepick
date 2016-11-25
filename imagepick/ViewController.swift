@@ -45,6 +45,13 @@ UINavigationControllerDelegate {
         bottomtext.text = "BOTTOM"
     
     }
+    @IBAction func share(_ sender: Any) {
+        
+        let image = UIImage()
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        self.present(controller, animated: true, completion: nil)
+    
+    }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         ImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
