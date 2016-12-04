@@ -73,11 +73,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "imagepick/ViewController.swift"
-            timestampString = "499663882.18109"
+            timestampString = "502545021.737939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -89,11 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "imagepick/ViewController.swift"
-            timestampString = "499664003.995079"
+            timestampString = "502545021.737939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "resettext()"
             landmarkType = "7">
          </BreakpointContent>
